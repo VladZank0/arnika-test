@@ -13,7 +13,7 @@ function init(){
       let squareLayout = ymaps.templateLayoutFactory.createClass(`
       
           <div class="map-marker">
-            <img src="../images/main-page/map_placemark.png" alt="" width:"80" height="85">
+            <img src="./images/main-page/map_placemark.png" alt="" width:"80" height="85">
             <div class="map-marker__content">
                 <p class="map-marker__title"> 
                     Арника 
