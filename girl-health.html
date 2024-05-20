@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lib/bvi/bvi.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/lib/accordion/accordion.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="preloader">
+        <span class="preloader__icon">
+            <img src="images/preloader/preloader-flower-part-1.svg" width="52" height="36" alt="" class="preloader__animated-part">
+            <img src="images/preloader/preloader-flower-part-2.png" width="83" height="93" alt="" class="preloader__default-part">
+        </span>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            
+<header class="header">
+    <div class="main-menu-background"></div>
+    <div class="main-menu-page-background"></div>
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo logo_desktop" href="index.html" aria-label="Логотип">
+                <img class="logo__img" width="230" height="77" src="images/main-page/logo.png" alt="logo">
+            </a>
+            <div class="header__main">
+                <div class="header__top">
+                    <a class="logo" href="index.html" aria-label="Логотип">
+                        <picture>
+                            <source srcset="./images/main-page/logo.png" media="(min-width: 701px)">
+                            <img class="logo__img" width="44" height="36" src="images/main-page/logo_mobile.png" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header__top-box">
+                        <div class="header__contact">
+                            <a href="tel:+2345555" class="contact-element">
+                                <span class="contact-element__icon contact-element__icon_tel-mini">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                                <span class="contact-element__text contact-element__text_tel-mobile">234-55-55</span>
+                            </a>
+                            <a href="https://yandex.ru/maps/?text=ул.%20Красная%20площадь,%209А,%20Арника" class="contact-element contact-element_address" target="_blank">
+                                <span class="contact-element__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>     
+                                </span>
+                                <span class="contact-element__text contact-element__text_address">Красноярск, ул. Красная площадь, 9А</span>
+                            </a>
+                        </div>
+                        <div class="header__top-buttons">
+                            <a href="" class="header-main-button" aria-label="Кнопка перейти в личный кабинет">
+                                <span class="header-main-button__icon">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17.5" stroke="#E7E7E7" ></circle>
+                                        <circle class="header-main-button__icon-progress-circle" cx="18" cy="18" r="17.5" stroke="#BDA37E"/>
+                                        <path d="M26 27V25C26 23.9391 25.5786 22.9217 24.8284 22.1716C24.0783 21.4214 23.0609 21 22 21H14C12.9391 21 11.9217 21.4214 11.1716 22.1716C10.4214 22.9217 10 23.9391 10 25V27" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 17C20.2091 17 22 15.2091 22 13C22 10.7909 20.2091 9 18 9C15.7909 9 14 10.7909 14 13C14 15.2091 15.7909 17 18 17Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                                <span class="header-main-button__text header-main-button__text_account">Личный кабинет</span>
+                            </a>
+                            <a href="#" class="header-main-button bvi-open header-main-button_eye-issue" aria-label="Кнопка включить версию для слабовидящих">
+                                <span class="header-main-button__icon">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17.5" stroke="#E7E7E7"></circle>
+                                        <circle class="header-main-button__icon-progress-circle" cx="18" cy="18" r="17.5" stroke="#BDA37E"/>
+                                        <path d="M7 18C7 18 11 10 18 10C25 10 29 18 29 18C29 18 25 26 18 26C11 26 7 18 7 18Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>     
+                                </span>
+                                <span class="header-main-button__text header-main-button__text_eye-issue">Версия для слабовидящих</span>
+                            </a>
+                        </div>
+                        <button class="primary-button primary-button_menu header__primary-button header__primary-button_mobile" data-modal="appointment-window">Записаться</button>
+                    </div>
+                    <div class="burger-btn bvi-no-styles">
+                        <div class="burger-btn__line bvi-no-styles"></div>
+                        <div class="burger-btn__line bvi-no-styles"></div>
+                        <div class="burger-btn__line bvi-no-styles"></div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <nav class="main-menu header__nav burger-menu" >
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item">
+                                <button data-text="О клинике" class="main-menu__item main-menu__dropdown-button bvi-no-styles">
+                                    <span class="main-menu__dropdown-button-text">О клинике</span>
+                                    <span class="main-menu__dropdown-button-icon">
+                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </span>
+                                </button>
+                                <div class="main-menu__dropdown-submenu">
+                                    <div class="main-menu__dropdown-submenu-container">
+                                        <ul class="main-menu__dropdown-submenu-list"> 
+                                            <li>
+                                                <a href="about-clinic.html" class="description-avg main-menu__dropdown-submenu-list-item">О клинике «Арника»</a>
+                                            </li>
+                                            <li>
+                                                <a href="revies-page.html" class="description-avg main-menu__dropdown-submenu-list-item">Отзывы пациентов</a>
+                                            </li>
+                                            <li>
+                                                <a href="care-service.html" class="description-avg main-menu__dropdown-submenu-list-item">Служба заботы и контроля качества</a>
+                                            </li>
+                                            <li>
+                                                <a href="news-page.html" class="description-avg main-menu__dropdown-submenu-list-item">Новости клиники</a>
+                                            </li>
+                                            <li>
+                                                <a href="licenses.html" class="description-avg main-menu__dropdown-submenu-list-item">Лицензии клиники</a>
+                                            </li>
+                                            <li>
+                                                <a href="vacancies.html" class="description-avg main-menu__dropdown-submenu-list-item">Карьера в клинике</a>
+                                            </li>
+                                            <li>
+                                                <a href="partners.html" class="description-avg main-menu__dropdown-submenu-list-item">Партнеры</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-menu__list-item main-menu__list-item_not-relative">
+                                <button data-text="Услуги" class="main-menu__item main-menu__dropdown-button bvi-no-styles">
+                                    <span class="main-menu__dropdown-button-text">Услуги</span>
+                                    <span class="main-menu__dropdown-button-icon">
+                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </span>
+                                </button>
+                                <div class="main-menu__dropdown-submenu">
+                                    <div class="main-menu__dropdown-submenu-container">
+                                        <div class="main-menu__dropdown-submenu-inner main-menu__dropdown-submenu-inner_tab-system">
+                                            <div class="main-menu__dropdown-submenu-tabs">
+                                                <button data-content="#mega-box-content-1" class="main-menu__dropdown-submenu-tab main-menu__dropdown-submenu-tab_active upper-note">
+                                                    Направления клиники
+                                                    <span class="main-menu__dropdown-submenu-tab-icon">
+                                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>   
+                                                    </span>
+                                                </button>
+                                                <button data-content="#mega-box-content-2" class="main-menu__dropdown-submenu-tab upper-note">
+                                                    Услуги клиники
+                                                    <span class="main-menu__dropdown-submenu-tab-icon">
+                                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>   
+                                                    </span>
+                                                </button>
+                                                <button data-content="#mega-box-content-3" class="main-menu__dropdown-submenu-tab upper-note">
+                                                    Комплексные программы
+                                                    <span class="main-menu__dropdown-submenu-tab-icon">
+                                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>   
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="main-menu__dropdown-submenu-contents">
+                                                <div id="mega-box-content-1" class="main-menu__dropdown-submenu-content main-menu__dropdown-submenu-content_active">
+                                                    <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                        <li>
+                                                            <a href="gynecology.html" class="menu-card">
+                                                                <img src="./images/services-icons/matka.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Акушерство и гинекология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pregnancy.html" class="menu-card">
+                                                                <img src="./images/services-icons/pregnancy.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Ведение беременности</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="girl-health.html" class="menu-card">
+                                                                <img src="./images/services-icons/girl.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Здоровье девочки</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="andrology.html" class="menu-card">
+                                                                <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Андрология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="urology.html" class="menu-card">
+                                                                <img src="./images/services-icons/urology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Урология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="neurology.html" class="menu-card">
+                                                                <img src="./images/services-icons/neurology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Неврология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="endocrinology.html" class="menu-card">
+                                                                <img src="./images/services-icons/endocrinology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Эндокринология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/hemostasis.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Гематология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="therapy.html" class="menu-card">
+                                                                <img src="./images/services-icons/therapy.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Терапия</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/allergies.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Дерматовенерология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="cardiology.html" class="menu-card">
+                                                                <img src="./images/services-icons/cardiology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Кардиология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/cancer.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Онкология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="mammology.html" class="menu-card">
+                                                                <img src="./images/services-icons/mammology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Маммология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/surgery.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Хирургия</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ultrasound.html" class="menu-card">
+                                                                <img src="./images/services-icons/ultrasound2.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Ультразвуковая диагностика (УЗИ)</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/hiv.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Иммунология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="directions.html" class="menu-card menu-card_link-to-all">
+                                                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="32" cy="32" r="31.5" transform="matrix(-1 0 0 1 64 0)" fill="white" stroke="#E7E7E7"/>
+                                                                    <circle class="arrow-button__circle" cx="32" cy="32" r="31.5" fill="#FFFFFF" stroke="#BDA37E"/>
+                                                                    <path d="M43.5504 32.3536C43.7457 32.1583 43.7457 31.8417 43.5504 31.6464L40.3685 28.4645C40.1732 28.2692 39.8566 28.2692 39.6613 28.4645C39.4661 28.6597 39.4661 28.9763 39.6613 29.1716L42.4898 32L39.6613 34.8284C39.4661 35.0237 39.4661 35.3403 39.6613 35.5355C39.8566 35.7308 40.1732 35.7308 40.3685 35.5355L43.5504 32.3536ZM20.7969 32.5H43.1969V31.5H20.7969V32.5Z" fill="#6B452C"/>
+                                                                </svg>  
+                                                                                                                                         
+                                                                <h5 class="menu-card__title">Все направления</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="mega-box-content-2" class="main-menu__dropdown-submenu-content">
+                                                    <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                        <li>
+                                                            <a href="infertility-treatment.html" class="menu-card">
+                                                                <img src="./images/services-icons/gynecology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Лечение бесплодия</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/aestetic.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Эстетическая гинекология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/surgery.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Удаление новообразований</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="analyzes.html" class="menu-card">
+                                                                <img src="./images/services-icons/micro.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Анализы</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/dropper.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Капельницы</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="day-hospital.html" class="menu-card">
+                                                                <img src="./images/services-icons/day.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Дневной стационар</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="menu-card">
+                                                                <img src="./images/services-icons/ambulance.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Вызов врача на дом</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="mega-box-content-3" class="main-menu__dropdown-submenu-content">
+                                                    <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                        <li>
+                                                            <a href="women-health.html" class="menu-card">
+                                                                <img src="./images/services-icons/matka.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Акушерство и гинекология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="men-health.html" class="menu-card">
+                                                                <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Андрология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="urolog-diagnostics.html" class="menu-card">
+                                                                <img src="./images/services-icons/urology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Урология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="heart-under-control.html" class="menu-card">
+                                                                <img src="./images/services-icons/cardiology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                                <h5 class="menu-card__title">Кардиология</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="complex-programs.html" class="menu-card menu-card_link-to-all">
+                                                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="32" cy="32" r="31.5" transform="matrix(-1 0 0 1 64 0)" fill="white" stroke="#E7E7E7"/>
+                                                                    <circle class="arrow-button__circle" cx="32" cy="32" r="31.5" fill="#FFFFFF" stroke="#BDA37E"/>
+                                                                    <path d="M43.5504 32.3536C43.7457 32.1583 43.7457 31.8417 43.5504 31.6464L40.3685 28.4645C40.1732 28.2692 39.8566 28.2692 39.6613 28.4645C39.4661 28.6597 39.4661 28.9763 39.6613 29.1716L42.4898 32L39.6613 34.8284C39.4661 35.0237 39.4661 35.3403 39.6613 35.5355C39.8566 35.7308 40.1732 35.7308 40.3685 35.5355L43.5504 32.3536ZM20.7969 32.5H43.1969V31.5H20.7969V32.5Z" fill="#6B452C"/>
+                                                                </svg>                                                                          
+                                                                <h5 class="menu-card__title">Все программы</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="main-menu__dropdown-submenu-inner main-menu__dropdown-submenu-inner_mobile">
+                                            <button class="main-menu__dropdown-submenu-mobile-button upper-note">
+                                                Направления клиники
+                                                <span class="main-menu__dropdown-submenu-mobile-button-icon">
+                                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>   
+                                                </span>
+                                            </button>
+                                            <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/matka.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Акушерство и гинекология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/pregnancy.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Ведение беременности</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/girl.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Здоровье девочки</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Андрология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/urology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Урология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/neurology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Неврология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/endocrinology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Эндокринология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/hemostasis.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Гематология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/therapy.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Терапия</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/allergies.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Дерматовенерология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/cardiology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Кардиология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/cancer.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Онкология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/mammology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Маммология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/surgery.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Хирургия</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/ultrasound2.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Ультразвуковая диагностика (УЗИ)</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/hiv.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Иммунология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card menu-card_link-to-all">
+                                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="32" cy="32" r="31.5" transform="matrix(-1 0 0 1 64 0)" fill="white" stroke="#E7E7E7"/>
+                                                            <circle class="arrow-button__circle" cx="32" cy="32" r="31.5" fill="#FFFFFF" stroke="#BDA37E"/>
+                                                            <path d="M43.5504 32.3536C43.7457 32.1583 43.7457 31.8417 43.5504 31.6464L40.3685 28.4645C40.1732 28.2692 39.8566 28.2692 39.6613 28.4645C39.4661 28.6597 39.4661 28.9763 39.6613 29.1716L42.4898 32L39.6613 34.8284C39.4661 35.0237 39.4661 35.3403 39.6613 35.5355C39.8566 35.7308 40.1732 35.7308 40.3685 35.5355L43.5504 32.3536ZM20.7969 32.5H43.1969V31.5H20.7969V32.5Z" fill="#6B452C"/>
+                                                        </svg>                                                                         
+                                                        <h5 class="menu-card__title">Все направления</h5>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <button class="main-menu__dropdown-submenu-mobile-button upper-note">
+                                                Услуги клиники
+                                                <span class="main-menu__dropdown-submenu-mobile-button-icon">
+                                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>   
+                                                </span>
+                                            </button>
+                                            <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/gynecology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Лечение бесплодия</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/aestetic.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Эстетическая гинекология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/surgery.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Удаление новообразований</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/micro.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Анализы</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/dropper.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Капельницы</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/day.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Дневной стационар</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/ambulance.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Вызов врача на дом</h5>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <button class="main-menu__dropdown-submenu-mobile-button upper-note">
+                                                Комплексные программы
+                                                <span class="main-menu__dropdown-submenu-mobile-button-icon">
+                                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>   
+                                                </span>
+                                            </button>
+                                            <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_mega-box"> 
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/matka.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Акушерство и гинекология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Андрология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/urology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Урология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card">
+                                                        <img src="./images/services-icons/cardiology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                        <h5 class="menu-card__title">Кардиология</h5>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="menu-card menu-card_link-to-all">
+                                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="32" cy="32" r="31.5" transform="matrix(-1 0 0 1 64 0)" fill="white" stroke="#E7E7E7"/>
+                                                            <circle class="arrow-button__circle" cx="32" cy="32" r="31.5" fill="#FFFFFF" stroke="#BDA37E"/>
+                                                            <path d="M43.5504 32.3536C43.7457 32.1583 43.7457 31.8417 43.5504 31.6464L40.3685 28.4645C40.1732 28.2692 39.8566 28.2692 39.6613 28.4645C39.4661 28.6597 39.4661 28.9763 39.6613 29.1716L42.4898 32L39.6613 34.8284C39.4661 35.0237 39.4661 35.3403 39.6613 35.5355C39.8566 35.7308 40.1732 35.7308 40.3685 35.5355L43.5504 32.3536ZM20.7969 32.5H43.1969V31.5H20.7969V32.5Z" fill="#6B452C"/>
+                                                        </svg>                                                                         
+                                                        <h5 class="menu-card__title">Все программы</h5>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-menu__list-item main-menu__list-item_not-relative">
+                                <button data-text="Диагностика" class="main-menu__item main-menu__dropdown-button bvi-no-styles">
+                                    <span class="main-menu__dropdown-button-text">Диагностика</span>
+                                    <span class="main-menu__dropdown-button-icon">
+                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </span>
+                                </button>
+                                <div class="main-menu__dropdown-submenu">
+                                    <div class="main-menu__dropdown-submenu-container">
+                                        <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_default-box"> 
+                                           <li>
+                                                <a href="" class="menu-card">
+                                                    <img src="./images/services-icons/ultrasound2.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Ультразвуковая диагностика (УЗИ)</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="" class="menu-card">
+                                                    <img src="./images/services-icons/micro.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Анализы</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="colposcopy.html" class="menu-card">
+                                                    <img src="./images/services-icons/pregnancy.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Кольпоскопия</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="hysteroscopy.html" class="menu-card">
+                                                    <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Гистероскопия</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="pipel-endometrial-biopsy.html" class="menu-card">
+                                                    <img src="./images/services-icons/andrology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Пайпель-биопсия эндометрия</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="" class="menu-card">
+                                                    <img src="./images/services-icons/cardiology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">ЭКГ</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="" class="menu-card">
+                                                    <img src="./images/services-icons/ultrasound.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">УЗИ сердца (ЭХОКГ)</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="smad.html" class="menu-card">
+                                                    <img src="./images/services-icons/smad.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">СМАД</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="holter.html" class="menu-card">
+                                                    <img src="./images/services-icons/holter.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">Холтер</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="" class="menu-card">
+                                                    <img src="./images/services-icons/gynecology.svg" class="menu-card__icon" loading="lazy" alt="Иконка направления" width="48" height="48">
+                                                    <h5 class="menu-card__title">КТГ</h5>
+                                                </a>
+                                           </li>
+                                           <li>
+                                                <a href="" class="menu-card menu-card_link-to-all">
+                                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="32" cy="32" r="31.5" transform="matrix(-1 0 0 1 64 0)" fill="white" stroke="#E7E7E7"/>
+                                                        <circle class="arrow-button__circle" cx="32" cy="32" r="31.5" fill="#FFFFFF" stroke="#BDA37E"/>
+                                                        <path d="M43.5504 32.3536C43.7457 32.1583 43.7457 31.8417 43.5504 31.6464L40.3685 28.4645C40.1732 28.2692 39.8566 28.2692 39.6613 28.4645C39.4661 28.6597 39.4661 28.9763 39.6613 29.1716L42.4898 32L39.6613 34.8284C39.4661 35.0237 39.4661 35.3403 39.6613 35.5355C39.8566 35.7308 40.1732 35.7308 40.3685 35.5355L43.5504 32.3536ZM20.7969 32.5H43.1969V31.5H20.7969V32.5Z" fill="#6B452C"/>
+                                                    </svg>                                                                         
+                                                    <h5 class="menu-card__title">Подготовка к исследованиям</h5>
+                                                </a>
+                                           </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__item bvi-no-styles" href="doctors.html">
+                                    <span class="main-menu__dropdown-button-text">Врачи</span>
+                                </a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__item bvi-no-styles" href="">
+                                    <span class="main-menu__dropdown-button-text">Прайс</span>
+                                </a>
+                            </li>
+                            <li class="main-menu__list-item ">
+                                <button data-text="О клинике" class="main-menu__item main-menu__dropdown-button bvi-no-styles">
+                                    <span class="main-menu__dropdown-button-text">Пациентам</span>
+                                    <span class="main-menu__dropdown-button-icon">
+                                        <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </span>
+                                </button>
+                                <div class="main-menu__dropdown-submenu">
+                                    <div class="main-menu__dropdown-submenu-container">
+                                        <ul class="main-menu__dropdown-submenu-list main-menu__dropdown-submenu-list_double"> 
+                                            <li>
+                                                <a href="loyalty-program.html" class="description-avg main-menu__dropdown-submenu-list-item">Запись на прием</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Программа лояльности</a>
+                                            </li>
+                                            <li>
+                                                <a href="healthy-blog.html" class="description-avg main-menu__dropdown-submenu-list-item">Блог о здоровье</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Подготовка к исследованиям</a>
+                                            </li>
+                                            <li>
+                                                <a href="important-info.html" class="description-avg main-menu__dropdown-submenu-list-item">Важная информация</a>
+                                            </li>
+                                            <li>
+                                                 <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Лечение по ОМС</a>
+                                            </li>
+                                            <li>
+                                                <a href="dmc.html" class="description-avg main-menu__dropdown-submenu-list-item">Лечение по ДМС</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Оформление справок в налоговые органы</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Выдача больничных листов</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Обработка персональных данных</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Политика конфиденциальности</a>
+                                            </li>
+                                            <li>
+                                                <a href="questions-answers.html" class="description-avg main-menu__dropdown-submenu-list-item">Вопросы и ответы</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Официальная информация</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="description-avg main-menu__dropdown-submenu-list-item">Нормативно-правовые документы</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__item bvi-no-styles" href="./contacts.html">
+                                    <span class="main-menu__dropdown-button-text">Контакты</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="main-menu__mobile-buttons">
+                            <a href="" class="header-main-button header-main-button_account-mobile" aria-label="Кнопка перейти в личный кабинет">
+                                <span class="header-main-button__icon">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17.5" stroke="#E7E7E7"></circle>
+                                        <circle class="header-main-button__icon-progress-circle" cx="18" cy="18" r="17.5" stroke="#BDA37E"/>
+                                        <path d="M26 27V25C26 23.9391 25.5786 22.9217 24.8284 22.1716C24.0783 21.4214 23.0609 21 22 21H14C12.9391 21 11.9217 21.4214 11.1716 22.1716C10.4214 22.9217 10 23.9391 10 25V27" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 17C20.2091 17 22 15.2091 22 13C22 10.7909 20.2091 9 18 9C15.7909 9 14 10.7909 14 13C14 15.2091 15.7909 17 18 17Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                                <span class="header-main-button__text">Личный кабинет</span>
+                            </a>
+                            <a href="#" class="header-main-button header-main-button_eye-issue-mobile bvi-open">
+                                <span class="header-main-button__icon">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17.5" stroke="#E7E7E7"></circle>
+                                        <circle class="header-main-button__icon-progress-circle" cx="18" cy="18" r="17.5" stroke="#BDA37E"/>
+                                        <path d="M7 18C7 18 11 10 18 10C25 10 29 18 29 18C29 18 25 26 18 26C11 26 7 18 7 18Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>     
+                                </span>
+                                <span class="header-main-button__text">Версия для слабовидящих</span>
+                            </a>
+                        </div>
+                        <div class="main-menu__mobile-footer">
+                            <div class="main-menu__mobile-footer-top">
+                                <a href="tel:+2345555" class="contact-element " aria-label="Кнопка позвонить">
+                                    <span class="contact-element__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </span>
+                                    <span class="contact-element__text contact-element__text_burger-menu">234-55-55</span>
+                                </a>
+                                <a href="" class="contact-element contact-element_address-mobile">
+                                    <span class="contact-element__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>     
+                                    </span>
+                                    <span class="contact-element__text contact-element__text_burger-menu">Красноярск, ул. Красная площадь, 9А</span>
+                                </a>
+                                <a href="https://yandex.ru/maps/?text=ул.%20Красная%20площадь,%209А,%20Арника" class="tertiary-button" target="_blank">
+                                    Маршрут на Яндексе
+                                    <span class="tertiary-button__icon">
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </span>
+                                </a>
+                            </div>
+                            <form class="search">
+                                <div class="search__container">
+                                    <div class="search__field search__field_menu">
+                                        <input type="text" class="search__input" name="search" value="" placeholder="Поиск по сайту...">
+                                        <button type="button" class="search__icon" aria-label="Кнопка поиска" style="border:0;padding:0;background:transparent;cursor:pointer;">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4064 19.4749C15.9973 19.4749 19.719 15.7532 19.719 11.1622C19.719 6.5713 15.9973 2.84961 11.4064 2.84961C6.81544 2.84961 3.09375 6.5713 3.09375 11.1622C3.09375 15.7532 6.81544 19.4749 11.4064 19.4749Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M20.9075 21.1498L17.0938 17.2305" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="search__clear tertiary-button">
+                                            <span class="search__clear-text tertiary-button_text">Очистить</span>
+                                            <span class="tertiary-button__icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.8685 4.12891L4.13281 15.8646" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.13281 4.12891L15.8685 15.8646" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>  
+                                            </span>                                  
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                    <div class="header__bottom-buttons">
+                        <a href="search.html" class="header-main-button header-main-button_search" aria-label="Кнопка поиска">
+                            <span class="header-main-button__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18" cy="18" r="17.5" stroke="#E7E7E7"></circle>
+                                    <circle class="header-main-button__icon-progress-circle" cx="18" cy="18" r="17.5" stroke="#BDA37E"/>
+                                    <path d="M17.4064 25.4749C21.9973 25.4749 25.719 21.7532 25.719 17.1622C25.719 12.5713 21.9973 8.84961 17.4064 8.84961C12.8154 8.84961 9.09375 12.5713 9.09375 17.1622C9.09375 21.7532 12.8154 25.4749 17.4064 25.4749Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.9075 27.1498L23.0938 23.2305" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>         
+                            </span>
+                            <span class="header-main-button__text header-main-button__text_search">Поиск</span>
+                        </a>
+                        <button class="primary-button primary-button_menu header__primary-button header__primary-button_desktop"  data-modal="appointment-window">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+   
+            <section class="hero-block">
+                <div class="hero-block__container container">
+                    <div class="hero-block__inner">
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="index.html" class="breadcrumbs__item-link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="directions.html" class="breadcrumbs__item-link">Направления</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="" class="breadcrumbs__item-link">Здоровье девочки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hero-block__content">
+                            <h1 class="hero-block__title h2">Здоровье девочки</h1>
+                            <p class="hero-block__text description-max">
+                                Детский и подростковый гинеколог
+                            </p>
+                            <ul class="gold-list gold-list_hero">
+                                <li class="gold-list__item">Наши детские гинекологи окружают вниманием и заботой</li>
+                                <li class="gold-list__item">Деликатно проводят осмотр, дают важные советы и рекомендации</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-block__img-wrapper">
+                    <img class="hero-block__img" src="images/gradient-block/pic-girl.png" width="364" height="260"  alt="Фото">
+                </div>
+            </section>
+            <div class="tabs-block tabs-block_navigation">
+                <div class="container tabs-block__slider">
+                    <ul class="tabs-block__list swiper-wrapper">
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#service" data-anchor="" class="tabs-block__button description-min">Услуги</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#visit-calendar" data-anchor="" class="tabs-block__button description-min">Календарь визитов</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#consultation" data-anchor="" class="tabs-block__button description-min">О консультации</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#diagnostics" data-anchor="" class="tabs-block__button description-min">Методы дигностики</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#doctors" data-anchor="" class="tabs-block__button description-min">Врачи</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#blog" data-anchor="" class="tabs-block__button description-min">Блог</a>
+                        </li>
+                        <li class="tabs-block__list-item swiper-slide">
+                            <a href="#price" data-anchor="" class="tabs-block__button description-min">Стоимость</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main class="main main_direction-page">
+                <div id="service" class="default-block" data-anchor-content="">
+                    <div class="default-block__container container">
+                        <h3 class="h3">Услуги направления</h3>
+                        <div class="beige-block">
+                            <ul class="unordered-list unordered-list_two">
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">Детский гинеколог</a>
+                                </li>
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">Подростковый гинеколог</a>
+                                </li>
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">УЗИ органов малого таза для девочек</a>
+                                </li>
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">Мазок на флору детский</a>
+                                </li>
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">Анализы</a>
+                                </li>
+                                <li class="unordered-list__item">
+                                <a href="" class="description-avg-link">Рассечение синехий</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="visit-calendar" class="default-block" data-anchor-content="">
+                    <div class="default-block__container default-block__container_beige container">
+                        <div class="beige-block">
+                            <h3 class="h3 t-center mustard">Календарь профилактических визитов</h3>
+                            <p class="description-avg-uppercase t-center">Даже несмотря на полное отсутствие жалоб со стороны девочки, посещать этого врача необходимо в обязательном порядке для профилактики:</p>
+                            <ol class="ordered-list ordered-list_aligned">
+                                <li class="ordered-list__item ordered-list__item_align_center">
+                                    <h5 class="ordered-list__item-title">с рождения</h5>
+                                    <p class="description-avg"><span class="description-avg-selected mustard">Первый осмотр девочки гинекологом должен состояться до года для исключения пороков развития органов репродуктивной системы.</span> С рождения чрезвычайно важна гигиена половых органов девочки. Отдельное внимание уделяется подмыванию. Если процедура выполнена не вовремя или неправильно, могут появиться опрелости. Ребенок будет чувствовать дискомфорт: жжение и зуд. Это негативно повлияет на ее поведение. Поэтому знание мамой правил интимной гигиены новорожденной девочки крайне важно.</p>
+                                    <div class="important-block important-block_left">
+                                        Следующий – в возрасте 2-3 лет перед поступлением девочки в дошкольное учреждение.
+                                    </div>
+                                </li>
+                                <li class="ordered-list__item ordered-list__item_align_center">
+                                    <h5 class="ordered-list__item-title">возраст: 5 лет</h5>
+                                    <p class="description-avg"><span class="description-avg-selected mustard">В 5 лет девочку следует показать врачу, чтобы исключить преждевременное половое созревание и убедиться, что нет воспалительного процесса.</span> Наиболее распространенным заболеванием этого возрастного периода является синехии-сращение (слипание) половых губ. Проблема может быть как врожденной, так и приобретенной. Причины возникновения аномалии неизвестны. По большей части с наступлением периода полового созревания синехии исчезают. Поэтому главное для родителей — не прибегать к самостоятельному лечению, а обязательно проконсультироваться с детским гинекологом.</p>
+                                    <div class="important-block important-block_left">
+                                        Далее необходим плановый осмотр перед поступлением в школу.
+                                    </div>
+                                </li>
+                                <li class="ordered-list__item ordered-list__item_align_center">
+                                    <h5 class="ordered-list__item-title">возраст: 10 - 11 лет</h5>
+                                    <p class="description-avg"><span class="description-avg-selected mustard">После достижения 10-11 лет у девочек наступают первые месячные,</span> проявляются вторичные половые признаки, поэтому ребёнка снова должен осмотреть детский врач гинеколог, чтобы убедиться в нормальном развитии.</p>
+                                </li>
+                                <li class="ordered-list__item ordered-list__item_align_center">
+                                    <h5 class="ordered-list__item-title">возраст: 13 - 14 лет</h5>
+                                    <p class="description-avg">Если у девочки в 13-14 лет все еще <span class="description-avg-selected mustard">не сформировались вторичные половые признаки,</span> рекомендуется посетить гинеколога.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div id="consultation" class="default-block" data-anchor-content="">
+                    <div class="default-block__container container">
+                        <h3 class="h3">Консультация подросткового гинеколога</h3>
+                        <div class="default-block__content default-block__content_same-gap">
+                            <p class="description-avg-uppercase">Визит к подростковому гинекологу требуется:</p>
+                            <ul class="unordered-list unordered-list_three">
+                                <li class="unordered-list__item">если регулярные месячные циклы не установились в течение 1,5 - 2 лет;</li>
+                                <li class="unordered-list__item">при обильных, продолжительных, нерегулярных месячных;</li>
+                                <li class="unordered-list__item">при сильной болезненности менструаций</li>
+                            </ul>
+                        </div>
+                        <div class="default-block__double">
+                            <div class="important-block important-block_left">
+                                Если нерегулярные месячные сочетаются с избыточной массой тела и наличием на коже стрий (признаков растяжения), необходимо показать девочку подростковому гинекологу.
+                            </div>
+                            <div class="important-block important-block_left">
+                                Начиная с 15-летнего возраста, посещать гинеколога необходимо ежегодно.
+                            </div>
+                        </div>
+                        <p class="description-avg">Если юная девушка задумывается о начале половой жизни, ей необходимо проконсультироваться с гинекологом по оптимальным способам <span class="description-avg-selected mustard">контрацепции и защиты от заболеваний, передающихся при половых контактах.</span> Специалист поможет выбрать препараты и другие средства с учётом возрастных особенностей организма.</p>
+                    </div>
+                </div>
+                <div id="diagnostics" class="default-block" data-anchor-content="">
+                    <div class="default-block__container container">
+                        <h3 class="h3">Методы диагностики детских гинекологических заболеваний</h3>
+                        <div class="default-block__content default-block__content_same-gap">
+                            <p class="description-avg-uppercase">Для установления точного диагноза и получения расширенной информации о состоянии ребёнка могут потребоваться:</p>
+                            <ul class="unordered-list unordered-list_two">
+                                <li class="unordered-list__item">общеклинические анализы крови, мочи;</li>
+                                <li class="unordered-list__item">анализ крови на гормоны;</li>
+                                <li class="unordered-list__item">урогенитальный мазок (оценка состояния микрофлоры влагалища);</li>
+                                <li class="unordered-list__item">бакпосев на микрофлору;</li>
+                                <li class="unordered-list__item">кольпоскопия (только у подростков, живущих половой жизнью);</li>
+                                <li class="unordered-list__item">ультразвуковое исследование молочных желез;</li>
+                                <li class="unordered-list__item">ультразвуковое обследование органов малого таза.</li>
+                            </ul>
+                        </div>
+                        <p class="description-avg">Репродуктивные возможности будущей взрослой женщины, мамы напрямую зависят от того, как внимательно относились к здоровью девочки в детстве.</p>
+                        <div class="important-block important-block_left">
+                            Задача родителей: беседовать с дочерью обо всем, что касается женского созревания, чтобы девочка не начала скрывать беспокоящие ее симптомы, стесняться, замыкаться в себе. Иногда маленькой пациентке проще довериться доктору, чем маме, поэтому важно привить малышке заботу о здоровье с юного возраста.
+                        </div>
+                    </div>
+                </div>
+                <div id="doctors" class="slider-block" data-anchor-content="">
+                    <div class="slider-block__container container">
+                        <h3 class="slider-block__title h3">Врачи</h3>
+                        <div class="slider-block__info-box">
+                            О здоровье вашего ребенка заботятся чуткие детские гинекологи и врачи ультразвуковой диагностики
+                        </div>
+                        <div class="slider-block__controls">
+                            <div class="swiper-button-prev arrow-button team-block__slider-button team-block__slider-button_prev">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M25.6464 40.3536C25.4512 40.1583 25.4512 39.8417 25.6464 39.6464L28.8284 36.4645C29.0237 36.2692 29.3403 36.2692 29.5355 36.4645C29.7308 36.6597 29.7308 36.9763 29.5355 37.1716L26.7071 40L29.5355 42.8284C29.7308 43.0237 29.7308 43.3403 29.5355 43.5355C29.3403 43.7308 29.0237 43.7308 28.8284 43.5355L25.6464 40.3536ZM54 40.5H26V39.5H54V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                            <div class="swiper-pagination team-block__slider-pagination slider-block__pagination slider-block__pagination_mob_visible">
+                            
+                            </div>
+                            <div class="swiper-button-next arrow-button team-block__slider-button team-block__slider-button_next">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M54.3536 40.3536C54.5488 40.1583 54.5488 39.8417 54.3536 39.6464L51.1716 36.4645C50.9763 36.2692 50.6597 36.2692 50.4645 36.4645C50.2692 36.6597 50.2692 36.9763 50.4645 37.1716L53.2929 40L50.4645 42.8284C50.2692 43.0237 50.2692 43.3403 50.4645 43.5355C50.6597 43.7308 50.9763 43.7308 51.1716 43.5355L54.3536 40.3536ZM26 40.5H54V39.5H26V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slider-block__slider team-block__slider">
+                            <div class="swiper-wrapper team-block__wrapper slider-block__slider-wrapper">
+                                <div class="doctor-card swiper-slide">
+                                    <a href="doctor-Ivanova.html" class="doctor-card__img-wrapper">
+                                        <img loading="lazy" src="images/main-page/team/doctor2.png" alt="Фото доктора" class="doctor-card__img" width="286" height="356">
+                                    </a>
+                                    <div class="doctor-card__content">
+                                        <a href="doctor-Ivanova.html">
+                                            <h5 class="doctor-card__title h5">иванова полина сергееевна</h5>
+                                        </a>
+                                        <a href="doctor-Ivanova.html">
+                                            <p class="doctor-card__text description-avg">Заведующая акушерско-гинекологическим отделением, акушер-гинеколог, гинеколог детского и подросткового возраста</p>
+                                        </a>
+                                    </div>
+                                    <div class="doctor-card__experience">
+                                        Стаж работы — 15 лет
+                                    </div>
+                                    <button class="tertiary-button doctor-card__button" data-modal="appointment-window">
+                                        Записаться к врачу
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="doctor-card swiper-slide">
+                                    <a href="" class="doctor-card__img-wrapper">
+                                        <img loading="lazy" src="images/main-page/team/no_photo.png" alt="Фото доктора" class="doctor-card__img" width="286" height="356">
+                                    </a>
+                                    <div class="doctor-card__content">
+                                        <a href="">
+                                            <h5 class="doctor-card__title h5">Глинская Татьяна геннадьевна</h5>
+                                        </a>
+                                        <a href="">
+                                            <p class="doctor-card__text description-avg">Акушер-гинеколог, детский гинеколог</p>
+                                        </a>
+                                    </div>
+                                    <div class="doctor-card__experience">
+                                        Стаж работы — 30 лет
+                                    </div>
+                                    <button class="tertiary-button doctor-card__button" data-modal="appointment-window">
+                                        Записаться к врачу
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="doctor-card swiper-slide">
+                                    <a href="doctor-Turluk.html" class="doctor-card__img-wrapper">
+                                        <img loading="lazy" src="images/main-page/team/doctor15.png" alt="Фото доктора" class="doctor-card__img" width="286" height="356">
+                                    </a>
+                                    <div class="doctor-card__content">
+                                        <a href="doctor-Turluk.html">
+                                            <h5 class="doctor-card__title h5">Турлюк Ольга Вадимовна</h5>
+                                        </a>
+                                        <a href="doctor-Turluk.html">
+                                            <p class="doctor-card__text description-avg">Врач ультразвуковой диагностики</p>
+                                        </a>
+                                    </div>
+                                    <div class="doctor-card__experience">
+                                        Стаж работы — 12 лет
+                                    </div>
+                                    <button class="tertiary-button doctor-card__button" data-modal="appointment-window">
+                                        Записаться к врачу
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="doctor-card swiper-slide">
+                                    <a href="doctor-Barkhatova.html" class="doctor-card__img-wrapper">
+                                        <img loading="lazy" src="images/main-page/team/doctor13.png" alt="Фото доктора" class="doctor-card__img" width="286" height="356">
+                                    </a>
+                                    <div class="doctor-card__content">
+                                        <a href="doctor-Barkhatova.html">
+                                            <h5 class="doctor-card__title h5">Бархатова Светлана Юрьевна</h5>
+                                        </a>
+                                        <a href="doctor-Barkhatova.html">
+                                            <p class="doctor-card__text description-avg">Врач ультразвуковой диагностики</p>
+                                        </a>
+                                    </div>
+                                    <div class="doctor-card__experience">
+                                        Стаж работы — 20 лет
+                                    </div>
+                                    <button class="tertiary-button doctor-card__button"  data-modal="appointment-window">
+                                        Записаться к врачу
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-block__bottom">
+                            <div class="swiper-pagination team-block__slider-pagination slider-block__pagination slider-block__pagination_mob_hidden">   
+                            </div>
+                            <!-- <button class="tertiary-button slider-block__button">
+                                Все отзывы
+                                <span class="tertiary-button__icon">
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="reviews" class="slider-block">
+                    <div class="slider-block__container container">
+                        <h3 class="slider-block__title h3">Отзывы пациентов</h3>
+                        <!-- <div class="slider-block__info-box">
+                            Специалисты с многолетним опытом, врачи высшей категории, кандидаты, доктора медицинских наук
+                        </div> -->
+                        <div class="slider-block__controls">
+                            <div class="swiper-button-prev arrow-button reviews-slider-button_prev">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M25.6464 40.3536C25.4512 40.1583 25.4512 39.8417 25.6464 39.6464L28.8284 36.4645C29.0237 36.2692 29.3403 36.2692 29.5355 36.4645C29.7308 36.6597 29.7308 36.9763 29.5355 37.1716L26.7071 40L29.5355 42.8284C29.7308 43.0237 29.7308 43.3403 29.5355 43.5355C29.3403 43.7308 29.0237 43.7308 28.8284 43.5355L25.6464 40.3536ZM54 40.5H26V39.5H54V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                            <div class="swiper-pagination reviews-slider__pagination slider-block__pagination slider-block__pagination_mob_visible">
+                            
+                            </div>
+                            <div class="swiper-button-next arrow-button reviews-slider-button_next">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M54.3536 40.3536C54.5488 40.1583 54.5488 39.8417 54.3536 39.6464L51.1716 36.4645C50.9763 36.2692 50.6597 36.2692 50.4645 36.4645C50.2692 36.6597 50.2692 36.9763 50.4645 37.1716L53.2929 40L50.4645 42.8284C50.2692 43.0237 50.2692 43.3403 50.4645 43.5355C50.6597 43.7308 50.9763 43.7308 51.1716 43.5355L54.3536 40.3536ZM26 40.5H54V39.5H26V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slider-block__slider reviews-slider">
+                            <div class="swiper-wrapper reviews-slider__wrapper">
+                                <div class="review-block review-block_slider swiper-slide">
+                                    <div class="review-block__header">
+                                        Маргарита
+                                            /
+                                        15 марта 2023
+                                    </div>
+                                    <a class="review-block__link tertiary-button tertiary-button_forward tertiary-button_reverse">
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </span>
+                                        <span class="tertiary-button__text">Читать полностью</span>
+                                    </a>
+                                    <div class="review-block__main">
+                                        <svg class="review-block__text-icon" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.84106 0L10.702 2.14286C9.92495 3.14286 9.11258 4.57143 8.2649 6.42857C7.41722 8.28572 6.74614 10.3214 6.25166 12.5357C5.75717 14.75 5.61589 16.9643 5.82781 19.1786C6.3223 18.9643 6.78146 18.8214 7.2053 18.75C7.62914 18.6071 8.05298 18.5357 8.47682 18.5357C9.88963 18.5357 11.0552 19.0357 11.9735 20.0357C12.8918 21.0357 13.351 22.2857 13.351 23.7857C13.351 25.7857 12.7859 27.3214 11.6556 28.3929C10.5254 29.4643 9.1479 30 7.52318 30C5.12141 30 3.24945 29.0714 1.90728 27.2143C0.635761 25.2857 0 22.9643 0 20.25C0 18.3929 0.31788 16.2143 0.953642 13.7143C1.66004 11.1429 2.57837 8.60715 3.70861 6.10715C4.90949 3.60715 6.28698 1.57143 7.84106 0ZM26.4901 0L29.351 2.14286C28.574 3.14286 27.7616 4.57143 26.9139 6.42857C26.0662 8.28572 25.3951 10.3214 24.9007 12.5357C24.4062 14.75 24.2649 16.9643 24.4768 19.1786C24.9713 18.9643 25.4305 18.8214 25.8543 18.75C26.2781 18.6071 26.702 18.5357 27.1258 18.5357C28.5386 18.5357 29.7042 19.0357 30.6225 20.0357C31.5408 21.0357 32 22.2857 32 23.7857C32 25.7857 31.4349 27.3214 30.3046 28.3929C29.1744 29.4643 27.7969 30 26.1722 30C23.7704 30 21.8985 29.0714 20.5563 27.2143C19.2848 25.2857 18.649 22.9643 18.649 20.25C18.649 18.3929 18.9669 16.2143 19.6026 13.7143C20.3091 11.1429 21.2274 8.60715 22.3576 6.10715C23.5585 3.60715 24.936 1.57143 26.4901 0Z" fill="#DCB971"/>
+                                        </svg> 
+                                        <span class="review-block__text description-avg">
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                        </span>
+                                    </div>
+                                    <div class="review-block__footer">
+                                        <div class="review-block__category">
+                                            <img class="review-block__category-icon" src="images/services-icons/doctor.png" alt="">
+                                            <div class="review-block__category-content">
+                                                <div class="review-block__category-content-top">
+                                                    <a class="review-block__category-label" href="">Врач</a>
+                                                    <a class="review-block__category-value" href="">Лосоногова Елена Григорьевна</a>
+                                                </div>
+                                                <a href="" class="tertiary-button tertiary-button_forward tertiary-button_reverse review-block__category-link">
+                                                    <span class="tertiary-button__icon">
+                                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg> 
+                                                    </span>
+                                                    <span class="tertiary-button__text">Перейти к врачу</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-block review-block_slider swiper-slide">
+                                    <div class="review-block__header">
+                                        Маргарита
+                                            /
+                                        15 марта 2023
+                                    </div>
+                                    <a class="review-block__link tertiary-button tertiary-button_forward tertiary-button_reverse">
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </span>
+                                        <span class="tertiary-button__text">Читать полностью</span>
+                                    </a>
+                                    <div class="review-block__main">
+                                        <svg class="review-block__text-icon" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.84106 0L10.702 2.14286C9.92495 3.14286 9.11258 4.57143 8.2649 6.42857C7.41722 8.28572 6.74614 10.3214 6.25166 12.5357C5.75717 14.75 5.61589 16.9643 5.82781 19.1786C6.3223 18.9643 6.78146 18.8214 7.2053 18.75C7.62914 18.6071 8.05298 18.5357 8.47682 18.5357C9.88963 18.5357 11.0552 19.0357 11.9735 20.0357C12.8918 21.0357 13.351 22.2857 13.351 23.7857C13.351 25.7857 12.7859 27.3214 11.6556 28.3929C10.5254 29.4643 9.1479 30 7.52318 30C5.12141 30 3.24945 29.0714 1.90728 27.2143C0.635761 25.2857 0 22.9643 0 20.25C0 18.3929 0.31788 16.2143 0.953642 13.7143C1.66004 11.1429 2.57837 8.60715 3.70861 6.10715C4.90949 3.60715 6.28698 1.57143 7.84106 0ZM26.4901 0L29.351 2.14286C28.574 3.14286 27.7616 4.57143 26.9139 6.42857C26.0662 8.28572 25.3951 10.3214 24.9007 12.5357C24.4062 14.75 24.2649 16.9643 24.4768 19.1786C24.9713 18.9643 25.4305 18.8214 25.8543 18.75C26.2781 18.6071 26.702 18.5357 27.1258 18.5357C28.5386 18.5357 29.7042 19.0357 30.6225 20.0357C31.5408 21.0357 32 22.2857 32 23.7857C32 25.7857 31.4349 27.3214 30.3046 28.3929C29.1744 29.4643 27.7969 30 26.1722 30C23.7704 30 21.8985 29.0714 20.5563 27.2143C19.2848 25.2857 18.649 22.9643 18.649 20.25C18.649 18.3929 18.9669 16.2143 19.6026 13.7143C20.3091 11.1429 21.2274 8.60715 22.3576 6.10715C23.5585 3.60715 24.936 1.57143 26.4901 0Z" fill="#DCB971"/>
+                                        </svg> 
+                                        <span class="review-block__text description-avg">
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                        </span>
+                                    </div>
+                                    <div class="review-block__footer">
+                                        <div class="review-block__category">
+                                            <img class="review-block__category-icon" src="images/services-icons/doctor.png" alt="">
+                                            <div class="review-block__category-content">
+                                                <div class="review-block__category-content-top">
+                                                    <a class="review-block__category-label" href="">Врач</a>
+                                                    <a class="review-block__category-value" href="">Лосоногова Елена Григорьевна</a>
+                                                </div>
+                                                <a href="" class="tertiary-button tertiary-button_forward tertiary-button_reverse review-block__category-link">
+                                                    <span class="tertiary-button__icon">
+                                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg> 
+                                                    </span>
+                                                    <span class="tertiary-button__text">Перейти к врачу</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-block review-block_slider swiper-slide">
+                                    <div class="review-block__header">
+                                        Маргарита
+                                            /
+                                        15 марта 2023
+                                    </div>
+                                    <a class="review-block__link tertiary-button tertiary-button_forward tertiary-button_reverse">
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </span>
+                                        <span class="tertiary-button__text">Читать полностью</span>
+                                    </a>
+                                    <div class="review-block__main">
+                                        <svg class="review-block__text-icon" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.84106 0L10.702 2.14286C9.92495 3.14286 9.11258 4.57143 8.2649 6.42857C7.41722 8.28572 6.74614 10.3214 6.25166 12.5357C5.75717 14.75 5.61589 16.9643 5.82781 19.1786C6.3223 18.9643 6.78146 18.8214 7.2053 18.75C7.62914 18.6071 8.05298 18.5357 8.47682 18.5357C9.88963 18.5357 11.0552 19.0357 11.9735 20.0357C12.8918 21.0357 13.351 22.2857 13.351 23.7857C13.351 25.7857 12.7859 27.3214 11.6556 28.3929C10.5254 29.4643 9.1479 30 7.52318 30C5.12141 30 3.24945 29.0714 1.90728 27.2143C0.635761 25.2857 0 22.9643 0 20.25C0 18.3929 0.31788 16.2143 0.953642 13.7143C1.66004 11.1429 2.57837 8.60715 3.70861 6.10715C4.90949 3.60715 6.28698 1.57143 7.84106 0ZM26.4901 0L29.351 2.14286C28.574 3.14286 27.7616 4.57143 26.9139 6.42857C26.0662 8.28572 25.3951 10.3214 24.9007 12.5357C24.4062 14.75 24.2649 16.9643 24.4768 19.1786C24.9713 18.9643 25.4305 18.8214 25.8543 18.75C26.2781 18.6071 26.702 18.5357 27.1258 18.5357C28.5386 18.5357 29.7042 19.0357 30.6225 20.0357C31.5408 21.0357 32 22.2857 32 23.7857C32 25.7857 31.4349 27.3214 30.3046 28.3929C29.1744 29.4643 27.7969 30 26.1722 30C23.7704 30 21.8985 29.0714 20.5563 27.2143C19.2848 25.2857 18.649 22.9643 18.649 20.25C18.649 18.3929 18.9669 16.2143 19.6026 13.7143C20.3091 11.1429 21.2274 8.60715 22.3576 6.10715C23.5585 3.60715 24.936 1.57143 26.4901 0Z" fill="#DCB971"/>
+                                        </svg> 
+                                        <span class="review-block__text description-avg">
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                            Хочу выразить слова благодарности, замечательному доктору Лосоноговой Елене Григорьевне! Настоящий ПРОФЕССИОНАЛ своего дела, очень чуткая, внимательная, отзывчивая, золото, а не доктор! Очень рекомендую, после посещения к Елене вы забудете про некие страхи/дискомфорт...
+                                        </span>
+                                    </div>
+                                    <div class="review-block__footer">
+                                        <div class="review-block__category">
+                                            <img class="review-block__category-icon" src="images/services-icons/doctor.png" alt="">
+                                            <div class="review-block__category-content">
+                                                <div class="review-block__category-content-top">
+                                                    <a class="review-block__category-label" href="">Врач</a>
+                                                    <a class="review-block__category-value" href="">Лосоногова Елена Григорьевна</a>
+                                                </div>
+                                                <a href="" class="tertiary-button tertiary-button_forward tertiary-button_reverse review-block__category-link">
+                                                    <span class="tertiary-button__icon">
+                                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg> 
+                                                    </span>
+                                                    <span class="tertiary-button__text">Перейти к врачу</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-block__bottom">
+                            <div class="swiper-pagination reviews-slider__pagination slider-block__pagination slider-block__pagination_mob_hidden">   
+                            </div>
+                            <button class="tertiary-button">
+                                <span class="tertiary-button__text">Все отзывы</span>
+                                <span class="tertiary-button__icon">
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog" class="slider-block slider-block_beige" data-anchor-content="">
+                    <div class="slider-block__container slider-block__container_blog container">
+                        <h3 class="slider-block__title h3">Блог о здоровье девочки</h3>
+                        <div class="slider-block__controls">
+                            <div class="swiper-button-prev arrow-button blog-block__slider-button blog-block__slider-button_prev">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M25.6464 40.3536C25.4512 40.1583 25.4512 39.8417 25.6464 39.6464L28.8284 36.4645C29.0237 36.2692 29.3403 36.2692 29.5355 36.4645C29.7308 36.6597 29.7308 36.9763 29.5355 37.1716L26.7071 40L29.5355 42.8284C29.7308 43.0237 29.7308 43.3403 29.5355 43.5355C29.3403 43.7308 29.0237 43.7308 28.8284 43.5355L25.6464 40.3536ZM54 40.5H26V39.5H54V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                            <div class="swiper-pagination blog-block__slider-pagination slider-block__pagination slider-block__pagination_mob_visible">
+                            
+                            </div>
+                            <div class="swiper-button-next arrow-button blog-block__slider-button blog-block__slider-button_next">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#E7E7E7"/>
+                                    <circle class="arrow-button__circle" cx="40" cy="40" r="39.5" fill="#FCFAF7" stroke="#BDA37E"/>
+                                    <path d="M54.3536 40.3536C54.5488 40.1583 54.5488 39.8417 54.3536 39.6464L51.1716 36.4645C50.9763 36.2692 50.6597 36.2692 50.4645 36.4645C50.2692 36.6597 50.2692 36.9763 50.4645 37.1716L53.2929 40L50.4645 42.8284C50.2692 43.0237 50.2692 43.3403 50.4645 43.5355C50.6597 43.7308 50.9763 43.7308 51.1716 43.5355L54.3536 40.3536ZM26 40.5H54V39.5H26V40.5Z" fill="#6B452C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slider-block__slider blog-block__slider">
+                            <div class="swiper-wrapper blog-block__wrapper">
+                                <div class="swiper-slide">
+                                    <article class="article-card">
+                                        <a href="">
+                                            <img loading="lazy" src="images/main-page/blog/pic7.png" alt="Фото статьи" class="article-card__img" width="328" height="304">
+                                        </a>
+                                        <div class="article-card__content">
+                                            <a href="">
+                                                <h5 class="article-card__title h5">ДЕТСКИЙ ГИНЕКОЛОГВ КРАСНОЯРСКЕ: КАК УХАЖИВАТЬ ЗА ДЕВОЧКОЙ?</h5>
+                                            </a>
+                                            <a href="">
+                                                <p class="article-card__text description-avg">
+                                                    Для мам дочек: рекомендации детского гинеколога. Как правильно ухаживать за новорожденной девочкой?
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <a href="" class="tertiary-button article-card__button">
+                                            Читать статью
+                                            <span class="tertiary-button__icon">
+                                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>    
+                                            </span>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="article-card">
+                                        <a href="">
+                                            <img loading="lazy" src="images/main-page/blog/pic8.png" alt="Фото статьи" class="article-card__img" width="328" height="304">
+                                        </a>
+                                        <div class="article-card__content">
+                                            <a href="">
+                                                <h5 class="article-card__title h5">Нарушения менструального цикла у подростков</h5>
+                                            </a>
+                                            <a href="">
+                                                <p class="article-card__text description-avg">
+                                                    Половое созревание девочек начинается примерно с 10 лет. Нормальным возрастом для менархе считается период от 11 до 16 лет. Слишком ранее половое созревание...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <a href="" class="tertiary-button article-card__button">
+                                            Читать статью
+                                            <span class="tertiary-button__icon">
+                                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>    
+                                            </span>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="article-card">
+                                        <a href="">
+                                            <img loading="lazy" src="images/main-page/blog/pic9.png" alt="Фото статьи" class="article-card__img" width="328" height="304">
+                                        </a>
+                                        <div class="article-card__content">
+                                            <a href="">
+                                                <h5 class="article-card__title h5">Детская гинекология: виды и лечение воспалительных заболеваний у девочек</h5>
+                                            </a>
+                                            <a href="">
+                                                <p class="article-card__text description-avg">
+                                                    Осмотр детского гинеколога − обязательная процедура, которую должны проходить маленькие девочки и девушки...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <a href="" class="tertiary-button article-card__button">
+                                            Читать статью
+                                            <span class="tertiary-button__icon">
+                                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>    
+                                            </span>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="article-card">
+                                        <a href="">
+                                            <img loading="lazy" src="images/main-page/blog/pic8.png" alt="Фото статьи" class="article-card__img" width="328" height="304">
+                                        </a>
+                                        <div class="article-card__content">
+                                            <a href="">
+                                                <h5 class="article-card__title h5">Нарушения менструального цикла у подростков</h5>
+                                            </a>
+                                            <a href="">
+                                                <p class="article-card__text description-avg">
+                                                    Половое созревание девочек начинается примерно с 10 лет. Нормальным возрастом для менархе считается период от 11 до 16 лет. Слишком ранее половое созревание...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <a href="" class="tertiary-button article-card__button">
+                                            Читать статью
+                                            <span class="tertiary-button__icon">
+                                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>    
+                                            </span>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-block__bottom">
+                            <div class="swiper-pagination blog-block__slider-pagination slider-block__pagination slider-block__pagination_mob_hidden">   
+                            </div>
+                            <button class="tertiary-button">
+                                <span class="tertiary-button__text">Все статьи</span>
+                                <span class="tertiary-button__icon">
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="price" class="default-block" data-anchor-content="">
+                    <div class="default-block__container container">
+                        <h3 class="h3">стоимость услуг</h3>
+                        <div class="default-block__content">
+                            <div class="price-list">
+                                <div class="price-list__heading">
+                                    <span class="upper-note">Наименование услуги</span>
+                                    <span class="upper-note">стоимость</span>
+                                </div>
+                                <ul class="price-list__list" data-show-more-container>
+                                    <li class="price-list__item description-avg">
+                                        <span >Прием врача-гинеколога детского до 12 лет</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 440</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Повторный прием врача-гинеколога детского до 12 лет</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 200</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Прием врача-гинеколога детского после 12 лет</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 650</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Повторный прием врача-гинеколога детского после 12 лет</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 450</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Вульвоскопия</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 350</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Кольпоскопия</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 650</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Мазок на флору</span>
+                                        <div class="price-list__item-prices">
+                                            <span>450</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Экспресс</span>
+                                        <div class="price-list__item-prices">
+                                            <span>670</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Забор мазка</span>
+                                        <div class="price-list__item-prices">
+                                            <span>250</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Разведение синехий половых губ</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 300</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Бак посев</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 470</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >Развернутый анализ крови</span>
+                                        <div class="price-list__item-prices">
+                                            <span>530</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >УЗИ малого таза для девочек</span>
+                                        <div class="price-list__item-prices">
+                                            <span>1 100</span>
+                                        </div>
+                                    </li>
+                                    <li class="price-list__item description-avg">
+                                        <span >УЗИ щитовидной железы</span>
+                                        <div class="price-list__item-prices">
+                                            <span>950</span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tertiary-button price-list-button">
+                            Перейти в прайс-лист
+                            <span class="tertiary-button__icon">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.9375 11.8594L5.9375 7.85938L1.9375 3.85938" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-wide-block">
+                    <div class="gradient-wide-block__img-wrapper">
+                        <img loading="lazy" src="images/gradient-block/pic-girl2.png" width="360" height="394" alt="Фоновое фото" class="gradient-wide-block__img">
+                    </div>
+                    <div class="container">
+                        <div class="gradient-wide-block__inner">
+                            <div class="gradient-wide-block__content">
+                                <h4 class="gradient-wide-block__title h4">Наши Детские гинекологи знают, как поговорить с ребенком и подростком о деликатных проблемах и помочь справиться со стеснением</h4>
+                                <p class="gradient-wide-block__text description-max">Записаться на консультацию к детскому гинекологув Красноярске, уточнить расписание приёма детского гинеколога можно по телефону или в форме записи на сайте клиники</p>
+                                <button class="secondary-button" data-modal="appointment-window">Записаться на прием</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer-default-block">
+                    <div class="footer-default-block__about">
+                        <a class="logo footer-logo" href="" aria-label="Логотип">
+                            <img class="logo__img" width="209" height="69" src="./images/main-page/logo.png" alt="logo">
+                        </a>
+                        <p class="footer-default-block__text description-avg">Семейная клиника «Арника» — клиника экспертов и профессионалов</p>
+                    </div>
+                    <div class="footer-default-block__buttons">
+                        <button class="primary-button primary-button_menu footer-default-block__primary-button">Записаться на прием</button>
+                        <a href="" class="tertiary-button tertiary-button_reverse footer-default-block__tertiary-button">
+                            Личный кабинет
+                            <span class="tertiary-button__icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0156 21.9219V19.9219C20.0156 18.861 19.5942 17.8436 18.8441 17.0934C18.0939 16.3433 17.0765 15.9219 16.0156 15.9219H8.01562C6.95476 15.9219 5.93734 16.3433 5.1872 17.0934C4.43705 17.8436 4.01563 18.861 4.01562 19.9219V21.9219" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.0156 11.9219C14.2248 11.9219 16.0156 10.131 16.0156 7.92188C16.0156 5.71274 14.2248 3.92188 12.0156 3.92188C9.80649 3.92188 8.01562 5.71274 8.01562 7.92188C8.01562 10.131 9.80649 11.9219 12.0156 11.9219Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__group">
+                        <li class="footer-nav__group-item">
+                            <button class="footer-nav__button accordion-btn description-avg-selected">
+                                Карта сайта
+                                <span class="footer-nav__button-icon">
+                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                            </button>
+                            <ul class="footer-nav__list accordion-content">
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">О клинике</a></li>
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">Услуги</a></li>
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">Цены</a></li>
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">Врачи</a></li>
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">Отзывы</a></li>
+                                <li class="footer-nav__list-item"> <a href="" class="description-avg">Блог здоровья </a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__group-item">
+                            <button class="footer-nav__button accordion-btn description-avg-selected">
+                                Пациентам
+                                <span class="footer-nav__button-icon">
+                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                            </button>
+                            <ul class="footer-nav__list accordion-content">
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Комплексные программы</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Лечение по ДМС</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Программа привилегий</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Новости</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__group-item">
+                            <button class="footer-nav__button accordion-btn description-avg-selected">
+                                О клинике
+                                <span class="footer-nav__button-icon">
+                                    <svg width="10" height="10" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L4 4L7 1" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>    
+                                </span>
+                            </button>
+                            <ul class="footer-nav__list accordion-content">
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Лицензии</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Карьера в «Арнике»</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Нормативно-правовые документы</a></li>
+                                <li class="footer-nav__list-item"><a href="" class="description-avg">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="search">
+                        <div class="search__container">
+                            <div class="search__field search__field_menu search__field_bcg_gray">
+                                <input type="text" class="search__input" name="search" value="" placeholder="Поиск по сайту...">
+                                <button type="button" class="search__icon" aria-label="Кнопка поиска" style="border:0;padding:0;background:transparent;cursor:pointer;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4064 19.4749C15.9973 19.4749 19.719 15.7532 19.719 11.1622C19.719 6.5713 15.9973 2.84961 11.4064 2.84961C6.81544 2.84961 3.09375 6.5713 3.09375 11.1622C3.09375 15.7532 6.81544 19.4749 11.4064 19.4749Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.9075 21.1498L17.0938 17.2305" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="search__clear tertiary-button">
+                                    <span class="search__clear-text tertiary-button_text">Очистить</span>
+                                    <span class="tertiary-button__icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.8685 4.12891L4.13281 15.8646" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.13281 4.12891L15.8685 15.8646" stroke="#353332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </span>                                  
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </nav>
+                <div class="footer__contacts">
+                    <span class="footer__contacts-title description-avg-selected">Контакты клиники</span>
+                    <div class="footer__contacts-content">
+                        <div class="contact-element">
+                            <span class="contact-element__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>
+                            <a href="tel:2345555" class="footer__contact-element-text description-max-link">234-55-55</a>
+                        </div>
+                        <div class="contact-element">
+                            <span class="contact-element__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>     
+                            </span>
+                            <span class="contact-element__text description-avg">Красноярск, ул. Красная площадь, 9А</span>
+                        </div>
+                        <div class="contact-element">
+                            <span class="contact-element__icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5156 4.92188H5.51562C4.41106 4.92188 3.51562 5.81731 3.51562 6.92188V20.9219C3.51562 22.0264 4.41106 22.9219 5.51562 22.9219H19.5156C20.6202 22.9219 21.5156 22.0264 21.5156 20.9219V6.92188C21.5156 5.81731 20.6202 4.92188 19.5156 4.92188Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5156 2.92188V6.92188" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.51562 2.92188V6.92188" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.51562 10.9219H21.5156" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </span>
+                            
+                            <span class="contact-element__text description-avg">будние дни: 7.30 - 21.00 <br> суббота: 8.00 - 19.00 <br> воскресенье: выходной </span>
+                        </div>
+                        <div class="contact-element">
+                            <span class="contact-element__icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5156 2.92188H7.51562C4.7542 2.92188 2.51562 5.16045 2.51562 7.92188V17.9219C2.51562 20.6833 4.7542 22.9219 7.51562 22.9219H17.5156C20.277 22.9219 22.5156 20.6833 22.5156 17.9219V7.92188C22.5156 5.16045 20.277 2.92188 17.5156 2.92188Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5192 12.2922C16.6427 13.1244 16.5005 13.9744 16.113 14.7212C15.7255 15.468 15.1124 16.0736 14.3609 16.4518C13.6093 16.8301 12.7577 16.9618 11.927 16.8281C11.0964 16.6944 10.329 16.3023 9.73408 15.7073C9.13916 15.1124 8.74697 14.3451 8.61331 13.5144C8.47964 12.6837 8.6113 11.8321 8.98956 11.0806C9.36783 10.329 9.97342 9.71592 10.7202 9.32842C11.467 8.94092 12.317 8.79876 13.1492 8.92218C13.9982 9.04806 14.7841 9.44364 15.3909 10.0505C15.9978 10.6573 16.3934 11.4433 16.5192 12.2922Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.0156 7.42188H18.0256" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>
+                            <a href="https://instagram.com/arnikakrsk" class="description-max-link footer__contact-element-text">@arnikakrsk</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           <div class="footer-bottom">
+                <p class="footer__bottom-text description-avg">
+                    Информация и цены, представленные на сайте, являются справочными и не являются публичной офертой. 
+                    Рекомендуем уточнять актуальную 
+                    стоимость услуг на момент визита по телефону <a class="description-max-link" href="">234-55-55</a>
+                </p>
+                <p class="footer-warning-text">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, <br> НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</p>
+                <div class="footer-site-info">
+                    <span class="footer-site-info__copyright">© 2024 «Семейная клиника «Арника»</span>
+                    <span class="footer-site-info__design">Дизайн сайта <a href="https://brickstudio.pro/" target="_blank">BRICKSTUDIO</a> </span>
+                </div>
+           </div>
+
+        </div>
+    </div>
+</footer>
+
+  
+        </div>
+    </div>
+    <div id="appointment-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_one modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Записаться на прием</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" required name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99 *">
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__middle">
+                    <p class="modal-window__middle-text">Удобное время для звонка:</p>
+                    <div class="modal-window__middle-options">
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="any" name="appointment_time">
+                            <span>Любое</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="12AM" name="appointment_time">
+                            <span>Утром до 12:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="12AM-5PM" name="appointment_time">
+                            <span>с 12:00 до 17:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="5PM-8PM" name="appointment_time">
+                            <span>с 17:00 до 20:00</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-window__bottom">
+                    <button type="submit" class="secondary-button modal-window__button">Отправить заявку</button>
+                    <label class="custom-checkbox description-avg">
+                        <input checked class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">Политики конфиденциальности</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/preloader.js"></script>  
+    <script src="js/modals.js"></script>
+    <script src="js/lib/bvi/bvi.js" defer></script>
+    <script src="js/bvi.js" defer></script>
+    <script src="js/main-menu.js" defer></script>
+    <script src="js/lib/accordion/accordion.js" defer></script>
+    <script src="js/lines-animation.js" defer></script>
+    <script src="js/lib/validation/imask.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/lib/swiper/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/anchors.js" defer></script>
+    <script src="js/show-more.js" defer></script>
+    <script src="js/lib/gsap/gsap.min.js" defer></script>
+    <script src="js/lib/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="js/lib/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+</body>
+</html>
