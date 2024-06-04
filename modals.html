@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/lib/accordion/accordion.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h5 style="text-align: center;">модалки для натяжки тут актуальные, на страницах могут неисправленные быть</h5>
+    <ul class="buttons_for_modals" style="display: flex; row-gap: 30px; margin: 20px auto; flex-direction: column; width: 100%;
+     align-items: center;
+    justify-content: center; width: fit-content;">
+        <li>
+            <button class="primary-button" data-modal="appointment-window">Записаться</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="application-submit-window">подать заявку</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="success-application-submit-window">подать заявку (успешно)</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="consultation-window">Получить консультацию</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="question-window">Задать вопрос</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="success-question-window">Задать вопрос (успешно)</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="review-window">Оставить отзыв</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="vacancy-response-window">отклик на вакансию</button>
+        </li>
+        <li>
+            <button class="secondary-button" data-modal="success-questionnaire-window">прохождение анкеты</button>
+        </li>
+    </ul>
+    <div id="appointment-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_one modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Записаться на прием</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" required name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99 *">
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__middle">
+                    <p class="modal-window__middle-text">Удобное время для звонка:</p>
+                    <div class="modal-window__middle-options">
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="any" name="appointment_time">
+                            <span>Любое</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="12AM" name="appointment_time">
+                            <span>Утром до 12:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="12AM-5PM" name="appointment_time">
+                            <span>с 12:00 до 17:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" value="5PM-8PM" name="appointment_time">
+                            <span>с 17:00 до 20:00</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-window__bottom">
+                    <button type="submit" class="secondary-button modal-window__button">Отправить заявку</button>
+                    <label class="custom-checkbox description-avg">
+                        <input checked class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">Политики конфиденциальности</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="application-submit-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_three modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Оставить заявку</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" required placeholder="Ваше имя*">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" required name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99*">
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__bottom">
+                    <button type="submit" class="secondary-button modal-window__button">Оставить заявку на программу</button>
+                    <label class="custom-checkbox description-avg">
+                        <input checked class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">Политики конфиденциальности</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="success-application-submit-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_success_min">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-window__content">
+                <h3 class="h3 t-center">Спасибо за заявку!</h3>
+                <p class="description-max t-center">Мы свяжемся с вами в ближайшее время! <br> Хорошего дня!</p>
+            </div>
+        </div>
+    </div>
+    <div id="consultation-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_one modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Получить консультацию</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" required name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99*">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21.0034 13.3199 20.6951 14.6219 20.1 15.8C19.3944 17.2118 18.3098 18.3992 16.9674 19.2293C15.6251 20.0594 14.0782 20.4994 12.5 20.5C11.1801 20.5035 9.87812 20.1951 8.7 19.6L3 21.5L4.9 15.8C4.30493 14.6219 3.99656 13.3199 4 12C4.00061 10.4218 4.44061 8.87488 5.27072 7.53258C6.10083 6.19028 7.28825 5.1056 8.7 4.40003C9.87812 3.80496 11.1801 3.49659 12.5 3.50003H13C15.0843 3.61502 17.053 4.49479 18.5291 5.97089C20.0052 7.44699 20.885 9.41568 21 11.5V12Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                                                             
+                        <textarea class="default-input__field default-input__field_textarea description-avg" required name="message" placeholder="Вопрос*"></textarea>
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__middle">
+                    <p class="modal-window__middle-text">Удобное время для звонка:</p>
+                    <div class="modal-window__middle-options">
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" name="appointment_time">
+                            <span>Любое</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" name="appointment_time">
+                            <span>Утром до 12:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" name="appointment_time">
+                            <span>с 12:00 до 17:00</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input class="custom-radio__input" type="radio" name="appointment_time">
+                            <span>с 17:00 до 20:00</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-window__bottom">
+                    <button type="submit" class="secondary-button modal-window__button">Получить консультацию</button>
+                    <label class="custom-checkbox description-avg">
+                        <input checked class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">Политики конфиденциальности</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="question-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_two modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Задать вопрос</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" name="phonenumber" required type="tel" placeholder="+7 (999) 999-99-99*">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21.0034 13.3199 20.6951 14.6219 20.1 15.8C19.3944 17.2118 18.3098 18.3992 16.9674 19.2293C15.6251 20.0594 14.0782 20.4994 12.5 20.5C11.1801 20.5035 9.87812 20.1951 8.7 19.6L3 21.5L4.9 15.8C4.30493 14.6219 3.99656 13.3199 4 12C4.00061 10.4218 4.44061 8.87488 5.27072 7.53258C6.10083 6.19028 7.28825 5.1056 8.7 4.40003C9.87812 3.80496 11.1801 3.49659 12.5 3.50003H13C15.0843 3.61502 17.053 4.49479 18.5291 5.97089C20.0052 7.44699 20.885 9.41568 21 11.5V12Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                                                             
+                        <textarea class="default-input__field default-input__field_textarea description-avg" required name="message" placeholder="Вопрос * "></textarea>
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__bottom modal-window__bottom_row">
+                    <label class="custom-checkbox modal-window__custom-checkbox description-avg">
+                        <input checked class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Нажимая на кнопку, вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">обработки персональных данных</a></span>
+                    </label>
+                    <button type="submit" class="secondary-button modal-window__button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="success-question-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_success_avg">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-window__content">
+                <h3 class="h3 t-center">Спасибо за ваш вопрос!</h3>
+                <p class="description-max t-center">Мы ответим на него в ближайшее время.<br>
+                    Хорошего дня!</p>
+            </div>
+        </div>
+    </div>
+    <div id="review-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_two modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">Оставить отзыв</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <div class="modal-window__form-selects">
+                        <div class="select select_modal modal-window__form-select">
+                            <div class="select__header ">
+                                <span class="select__current">
+                                    Выберите направление
+                                </span>
+                                <div class="select__icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 2.50012L8 7.50012L13 2.50012" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="select__input" name="direction" type="text" hidden>
+                            <div class="select__body ">
+                                <div class="select__item">Акушерство и гинекология</div>
+                                <div class="select__item">Ведение беременности</div>
+                                <div class="select__item">Андрология</div>
+                                <div class="select__item">Эндокринология</div>
+                            </div>
+                            <div class="select-block"></div>
+                        </div>
+                        <div class="select select_modal modal-window__form-select">
+                            <div class="select__header ">
+                                <span class="select__current">
+                                    Выберите врача
+                                </span>
+                                <div class="select__icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 2.50012L8 7.50012L13 2.50012" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="select__input" name="doctor" type="text" hidden>
+                            <div class="select__body ">
+                                <div class="select__item">Михайлюк М.Р.</div>
+                                <div class="select__item">Виноградова М.А.</div>
+                                <div class="select__item">Лосоногова Е.Г.</div>
+                                <div class="select__item">Щитикова Е.К.</div>
+                            </div>
+                            <div class="select-block"></div>
+                        </div>
+                    </div>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                        <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                              
+                        <input class="default-input__field description-avg phone-input" name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99 *">
+                    </label>
+                    <label class="default-input">
+                        <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21.0034 13.3199 20.6951 14.6219 20.1 15.8C19.3944 17.2118 18.3098 18.3992 16.9674 19.2293C15.6251 20.0594 14.0782 20.4994 12.5 20.5C11.1801 20.5035 9.87812 20.1951 8.7 19.6L3 21.5L4.9 15.8C4.30493 14.6219 3.99656 13.3199 4 12C4.00061 10.4218 4.44061 8.87488 5.27072 7.53258C6.10083 6.19028 7.28825 5.1056 8.7 4.40003C9.87812 3.80496 11.1801 3.49659 12.5 3.50003H13C15.0843 3.61502 17.053 4.49479 18.5291 5.97089C20.0052 7.44699 20.885 9.41568 21 11.5V12Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                                                             
+                        <textarea class="default-input__field default-input__field_textarea description-avg" required name="message" placeholder="Вопрос * "></textarea>
+                    </label>
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__bottom modal-window__bottom_row">
+                    <label class="custom-checkbox description-avg">
+                        <input checked="" class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">Политики конфиденциальности</a></span>
+                    </label>
+                    <button type="submit" class="secondary-button modal-window__button">Оставить отзыв</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="vacancy-response-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_max modal-window__container_flower-view_two modal-window__container_mob_full-height">
+            <h3 class="modal-window__title h3">отклик на вакансию</h3>
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form class="modal-window__form">
+                <div class="modal-window__top">
+                    <div class="select select_modal">
+                        <div class="select__header ">
+                            <span class="select__current">
+                                Выберите вакансию
+                            </span>
+                            <div class="select__icon">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 2.50012L8 7.50012L13 2.50012" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <input class="select__input" type="text" hidden>
+                        <div class="select__body ">
+                            <div class="select__item">Вакансия 1</div>
+                            <div class="select__item">Вакансия 2</div>
+                            <div class="select__item">Вакансия 3</div>
+                            <div class="select__item">Вакансия 4</div>
+                            <div class="select__item">Вакансия 5</div>
+                            <div class="select__item">Вакансия 6</div>
+                        </div>
+                        <div class="select-block"></div>
+                    </div>
+                    <div class="modal-window__double-box-wrapper">
+                        <h5 class="h5">Личные и контактные данные:</h5>
+                        <div class="modal-window__double-box">
+                            <div class="modal-window__double-box-part">
+                                <label class="default-input">
+                                    <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                    <input class="default-input__field description-avg" name="name" type="text" required placeholder="ФИО (полностью)*">
+                                </label>
+                                <label class="default-input">
+                                    <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4.5H5C3.89543 4.5 3 5.39543 3 6.5V20.5C3 21.6046 3.89543 22.5 5 22.5H19C20.1046 22.5 21 21.6046 21 20.5V6.5C21 5.39543 20.1046 4.5 19 4.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2.5V6.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2.5V6.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10.5H21" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                              
+                                    <input class="default-input__field description-avg date-input" name="date-of-birth" type="text" placeholder="Дата рождения*">
+                                    <button type="button" class="default-input__button tertiary-button tertiary-button_forward" data-date-picker-button>
+                                        <span class="tertiary-button__text">Выбрать</span>
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.34375 11.25L6.34375 7.25L2.34375 3.25" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                        </span>                                  
+                                    </button>
+                                </label>
+                            </div>
+                            <div class="modal-window__double-box-part">
+                                <label class="default-input">
+                                    <svg class="default-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.9975 16.9201V19.9201C21.9986 20.1986 21.9416 20.4743 21.83 20.7294C21.7184 20.9846 21.5548 21.2137 21.3496 21.402C21.1443 21.5902 20.9021 21.7336 20.6382 21.8228C20.3744 21.912 20.0949 21.9452 19.8175 21.9201C16.7403 21.5857 13.7845 20.5342 11.1875 18.8501C8.77132 17.3148 6.72283 15.2663 5.18749 12.8501C3.49747 10.2413 2.44573 7.27109 2.11749 4.1801C2.0925 3.90356 2.12537 3.62486 2.21399 3.36172C2.30262 3.09859 2.44506 2.85679 2.63226 2.65172C2.81945 2.44665 3.0473 2.28281 3.30128 2.17062C3.55527 2.05843 3.82983 2.00036 4.10749 2.0001H7.10749C7.5928 1.99532 8.06328 2.16718 8.43125 2.48363C8.79922 2.80008 9.03957 3.23954 9.10749 3.7201C9.23411 4.68016 9.46894 5.62282 9.80749 6.5301C9.94204 6.88802 9.97115 7.27701 9.8914 7.65098C9.81164 8.02494 9.62635 8.36821 9.35749 8.6401L8.08749 9.9101C9.51105 12.4136 11.5839 14.4865 14.0875 15.9101L15.3575 14.6401C15.6294 14.3712 15.9726 14.1859 16.3466 14.1062C16.7206 14.0264 17.1096 14.0556 17.4675 14.1901C18.3748 14.5286 19.3174 14.7635 20.2775 14.8901C20.7633 14.9586 21.2069 15.2033 21.524 15.5776C21.8412 15.9519 22.0097 16.4297 21.9975 16.9201Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                              
+                                    <input class="default-input__field description-avg phone-input" name="phonenumber" type="tel" placeholder="+7 (999) 999-99-99*">
+                                </label>
+                                <label class="default-input">   
+                                    <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22 6.5L12 13.5L2 6.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                        
+                                    <input class="default-input__field description-avg" name="phonenumber" type="email" required placeholder="Электронная почта*">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-window__double-box-wrapper">
+                        <h5 class="h5">Образование:</h5>
+                        <div class="modal-window__double-box">
+                            <div class="modal-window__double-box-part">
+                                <label class="default-input">
+                                    <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4.5H5C3.89543 4.5 3 5.39543 3 6.5V20.5C3 21.6046 3.89543 22.5 5 22.5H19C20.1046 22.5 21 21.6046 21 20.5V6.5C21 5.39543 20.1046 4.5 19 4.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2.5V6.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2.5V6.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10.5H21" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                              
+                                    <input class="default-input__field description-avg date-input" name="graduation-date" type="text" placeholder="Дата выпуска*">
+                                    <button type="button" class="default-input__button tertiary-button tertiary-button_forward" data-date-picker-button>
+                                        <span class="tertiary-button__text">Выбрать</span>
+                                        <span class="tertiary-button__icon">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.34375 11.25L6.34375 7.25L2.34375 3.25" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                        </span>                                  
+                                    </button>
+                                </label>
+                                <label class="default-input">                               
+                                    <input class="default-input__field default-input__field_icon_none description-avg" name="name" type="text" placeholder="Название учебного заведения*">
+                                </label>
+                                <label class="default-input">
+                                    <input class="default-input__field default-input__field_icon_none description-avg" name="name" type="text" placeholder="Факультет/отделение*">
+                                </label>
+                            </div>
+                            <div class="modal-window__double-box-part">
+                                <label class="default-input modal-window__double-box-textarea">
+                                    <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 12C21.0034 13.3199 20.6951 14.6219 20.1 15.8C19.3944 17.2118 18.3098 18.3992 16.9674 19.2293C15.6251 20.0594 14.0782 20.4994 12.5 20.5C11.1801 20.5035 9.87812 20.1951 8.7 19.6L3 21.5L4.9 15.8C4.30493 14.6219 3.99656 13.3199 4 12C4.00061 10.4218 4.44061 8.87488 5.27072 7.53258C6.10083 6.19028 7.28825 5.1056 8.7 4.40003C9.87812 3.80496 11.1801 3.49659 12.5 3.50003H13C15.0843 3.61502 17.053 4.49479 18.5291 5.97089C20.0052 7.44699 20.885 9.41568 21 11.5V12Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                             
+                                    <textarea class="default-input__field  default-input__field_textarea default-input__field_textarea_modal description-avg" required name="message" placeholder="Специализированные курсы, аспирантура, учебная степень, тренинги и т.д."></textarea>
+                                </label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="form-warning-text">
+                        <span style="color: red;">*</span> — Поля обязательные к заполнению
+                    </div>
+                </div>
+                <div class="modal-window__bottom modal-window__bottom_row">
+                    <label class="custom-checkbox description-avg">
+                        <input checked="" class="custom-checkbox__input" name="personal-data" type="checkbox">
+                        <span>Нажимая на кнопку, вы подтверждаете согласие с условиями <a href="" class="description-avg-link custom-checkbox__link">обработки персональных данных</a></span>
+                    </label>
+                    <button type="submit" class="secondary-button modal-window__button">Отправить</button>
+                </div>
+            </form>
+            <div style="display: none;" id="date-picker" class="date-picker">
+                <div class="date-picker__header">
+                    <div class="date-picker__switch">
+                        <span id="prev" class="date-picker__switch-button">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 11L1.5 7L5.5 3" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </span>
+                        <p class="date-picker__current-date upper-note"></p>
+                        <span id="next" class="date-picker__switch-button">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 11L5.5 7L1.5 3" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                    <button class="tertiary-button tertiary-button_forward date-picker__header-button">
+                        <span class="tertiary-button__text">Выбрать дату</span>
+                        <span class="tertiary-button__icon">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.9375 11.9844L5.9375 7.98438L1.9375 3.98438" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </span>
+                    </button>
+                </div>
+                <div class="date-picker__calendar">
+                    <ul class="date-picker__calendar-weeks">
+                        <li class="date-picker__calendar-week description-avg-uppercase">Пн</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Вт</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Ср</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Чт</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Пт</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Сб</li>
+                        <li class="date-picker__calendar-week description-avg-uppercase">Вс</li>
+                    </ul>
+                    <ul class="date-picker__calendar-days"></ul>
+                </div>
+                <button class="tertiary-button date-picker__submit">
+                    Сохранить
+                </button>
+                <div class="date-switch">
+                    <div class="date-switch__container">
+                        <div class="date-switch__output">
+                            
+                        </div>
+                        <button class="tertiary-button date-switch__submit">
+                            Сохранить
+                        </button>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="success-questionnaire-window" style="display: none;" class="modal-window">
+        <div class="modal-window__container modal-window__container_flower-view_success modal-window__container_success_max">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg class="modal-window__close-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4844 1.5L1.48438 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.48438 1.5L17.4844 17.5" stroke="#6B452C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-window__content">
+                <h3 class="h3 t-center">Спасибо за ваше мнение!</h3>
+                <p class="description-max t-center">Благодарим за сотрудничество!<br>
+                    Хорошего дня!</p>
+            </div>
+        </div>
+    </div>
+    <div class="default-block container">
+        <p class="t-center">пример поля с ошибкой</p>
+        <div>
+            <label class="default-input default-input_error">
+                <svg class="default-input__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#BDA37E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                
+                <input class="default-input__field description-avg" name="name" type="text" placeholder="Ваше имя">
+            </label>
+            <span class="input-error-text">*Заполните поле</span>
+        </div>
+    </div>
+    
+
+    <script src="js/modals.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/lib/validation/imask.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
