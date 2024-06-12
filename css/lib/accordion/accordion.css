@@ -1,0 +1,1 @@
+.accordion-btn{background:0 0;width:100%;text-align:left;font-size:40px;border:0;outline:0}.accordion-btn:hover{cursor:pointer}.accordion-content{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out;max-height:0;min-height:0;overflow-y:hidden}.accordion-btn_active+.accordion-content{min-height:auto;max-height:none}
