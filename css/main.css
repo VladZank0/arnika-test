@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 body[data-preloading]::-webkit-scrollbar-thumb {
-  background: #FCFAF7 !important;
+  background: rgb(252, 250, 247) !important;
 }
 
 .h1 {
@@ -189,7 +189,7 @@ body {
 }
 
 .preloader {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,7 +493,7 @@ a[href^=mailto] {
 }
 
 .tertiary-button_beige {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   border: none;
   overflow: visible;
   padding: 0;
@@ -767,7 +767,7 @@ a[href^=mailto] {
 }
 
 .important-block_dark {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   text-align: left;
   color: #353332;
   border: none;
@@ -804,7 +804,7 @@ a[href^=mailto] {
 }
 
 .pagination-counter_white-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 32px;
@@ -1159,8 +1159,8 @@ a[href^=mailto] {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #FCFAF7), to(transparent));
-  background: linear-gradient(0deg, #FCFAF7 2%, transparent 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, rgb(252, 250, 247)), to(transparent));
+  background: linear-gradient(0deg, rgb(252, 250, 247) 2%, transparent 100%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1191,7 +1191,7 @@ a[href^=mailto] {
 }
 
 .program-card {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -1274,7 +1274,7 @@ a[href^=mailto] {
 }
 
 .program-max-card {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -1588,7 +1588,7 @@ a[href^=mailto] {
 }
 
 .breadcrumbs-box {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -1651,7 +1651,7 @@ a[href^=mailto] {
 }
 
 .default-input__field {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 20px 20px 20px 60px;
   box-sizing: border-box;
   border-radius: 12px;
@@ -1969,7 +1969,7 @@ a[href^=mailto] {
 }
 
 .error-404 {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   align-items: center;
   min-height: calc(100vh - 72px);
@@ -2118,7 +2118,7 @@ a[href^=mailto] {
 }
 
 .list-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 60px 16px;
   display: flex;
   flex-direction: column;
@@ -2310,7 +2310,7 @@ a[href^=mailto] {
 }
 
 .select__header {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -2386,7 +2386,7 @@ a[href^=mailto] {
 }
 
 .select__item:hover {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -2476,7 +2476,7 @@ a[href^=mailto] {
 }
 
 .gradient-wide-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: relative;
 }
 
@@ -2651,7 +2651,7 @@ a[href^=mailto] {
 }
 
 .review-block_slider {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   border-radius: 12px;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -2747,7 +2747,7 @@ a[href^=mailto] {
 }
 
 .banner {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: relative;
 }
 
@@ -2817,7 +2817,7 @@ a[href^=mailto] {
 }
 
 .custom-tab_accordion-btn {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 16px;
   column-gap: 32px;
   border: none;
@@ -2853,7 +2853,7 @@ a[href^=mailto] {
 
 .custom-tab.tab_active,
 .custom-tab.accordion-btn_active {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
 }
 
 .custom-tab.tab_active .custom-tab__icon,
@@ -2904,7 +2904,7 @@ a[href^=mailto] {
 }
 
 .default-block__beige {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -2948,7 +2948,7 @@ a[href^=mailto] {
 
 .default-block__header-info-box {
   font: 400 14px/20px "AvenirNextCyr", sans-serif;
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: relative;
   width: 100%;
   padding: 20px 98px 20px 20px;
@@ -3051,7 +3051,7 @@ a[href^=mailto] {
   gap: 20px;
 }
 
-.default-block__content_services-grid .service-card {
+.default-block__content_services-grid .service-card:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -3159,7 +3159,7 @@ a[href^=mailto] {
 }
 
 .beige-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   row-gap: 28px;
@@ -3278,7 +3278,7 @@ a[href^=mailto] {
 }
 
 .service-card {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -3342,7 +3342,7 @@ a[href^=mailto] {
 }
 
 .slider-block_beige {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 80px 0;
 }
 
@@ -3395,7 +3395,7 @@ a[href^=mailto] {
 
 .slider-block__info-box {
   font: 400 14px/20px "AvenirNextCyr", sans-serif;
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   overflow: hidden;
   order: 2;
   position: relative;
@@ -3520,7 +3520,7 @@ a[href^=mailto] {
 }
 
 .radius-gradient-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3727,7 +3727,7 @@ a[href^=mailto] {
 }
 
 .doc-item:hover {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   transition: 0.5s;
 }
 
@@ -3906,7 +3906,7 @@ a[href^=mailto] {
 }
 
 .radio-switch__marker {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: absolute;
   top: -1px;
   z-index: 0;
@@ -4195,7 +4195,7 @@ a[href^=mailto] {
 }
 
 .fancybox__content > .f-button.is-close-btn {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   top: -44px !important;
   right: 0;
   border-radius: 50%;
@@ -4235,7 +4235,7 @@ f-button.is-next:hover .arrow-button__circle {
 }
 
 .f-button:hover .arrow-button__circle {
-  fill: #FCFAF7;
+  fill: rgb(252, 250, 247);
   transition: 0.5s !important;
 }
 
@@ -4457,7 +4457,7 @@ body {
 }
 
 .main-menu {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -4515,7 +4515,7 @@ body {
 }
 
 .main-menu-background {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: none;
   width: 100%;
   height: 0;
@@ -4814,7 +4814,7 @@ body {
 }
 
 .hero {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
 }
 
 .hero .swiper-slide .hero__slide-content {
@@ -4871,7 +4871,7 @@ body {
 }
 
 .hero__slide {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
@@ -5023,7 +5023,7 @@ body {
 }
 
 .direction-card {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   align-items: stretch;
   position: relative;
@@ -5101,7 +5101,7 @@ body {
 }
 
 .direction-card__float-button {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: none;
   position: absolute;
   bottom: 20px;
@@ -5231,7 +5231,7 @@ body {
 }
 
 .about-info-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 60px 16px;
   box-sizing: border-box;
   border-radius: 12px;
@@ -5286,7 +5286,7 @@ body {
 }
 
 .about-features-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   padding: 60px 16px;
@@ -5411,7 +5411,7 @@ body {
 }
 
 .blog-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   position: relative;
   padding: 80px 0;
   z-index: 2;
@@ -5650,7 +5650,7 @@ body {
 }
 
 .footer__contacts {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   padding: 32px;
   box-sizing: border-box;
   width: 100%;
@@ -5715,7 +5715,7 @@ body {
 }
 
 .footer-max__contacts {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   padding: 32px 40px;
@@ -5783,7 +5783,7 @@ body {
 }
 
 .contact-box__inner {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5828,7 +5828,7 @@ body {
 }
 
 .contact-map-box__inner {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -5875,7 +5875,7 @@ body {
 }
 
 .contact-page-schedule__inner {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -6014,7 +6014,7 @@ body {
 }
 
 .search__result:hover {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   transition: 0.3s;
 }
 
@@ -6112,7 +6112,7 @@ body {
 }
 
 .search__clear {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: none;
   border: none;
   padding: 8px;
@@ -6173,7 +6173,7 @@ body {
 }
 
 .hero-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6265,7 +6265,7 @@ body {
 }
 
 .tabs-block {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
 }
 
 .tabs-block__list {
@@ -6562,7 +6562,7 @@ body {
 }
 
 .about-clinic-tour__bottom {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -6634,7 +6634,7 @@ body {
 }
 
 .clinic-care-connect__inner {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -6727,7 +6727,7 @@ body {
 }
 
 .vacancies-response {
-  background: #FCFAF7;
+  background: rgb(252, 250, 247);
   border-radius: 12px;
   margin-bottom: 80px;
 }
@@ -7766,7 +7766,7 @@ body {
   }
 
   .unordered-list_four .unordered-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     break-inside: avoid;
   }
 
@@ -7779,7 +7779,7 @@ body {
   }
 
   .unordered-list_three .unordered-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     break-inside: avoid;
   }
 
@@ -7790,7 +7790,7 @@ body {
   }
 
   .unordered-list_two .unordered-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     break-inside: avoid;
   }
 
@@ -7802,7 +7802,7 @@ body {
   }
 
   .gold-list_two .gold-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .gold-list_four {
@@ -7814,7 +7814,7 @@ body {
   }
 
   .gold-list_four .gold-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .gold-list {
@@ -7852,7 +7852,7 @@ body {
   }
 
   .sand-list_two .sand-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .sand-list_four {
@@ -7864,7 +7864,7 @@ body {
   }
 
   .sand-list_four .sand-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .sand-list_hero .gold-list__item {
@@ -9835,7 +9835,7 @@ body {
 
   .vacancies-response__inner {
     row-gap: 32px;
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
     padding: 60px 48px;
   }
 
@@ -10413,7 +10413,7 @@ body {
   }
 
   .gold-list_three .gold-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .gold-list_four {
@@ -10465,7 +10465,7 @@ body {
   }
 
   .sand-list_three .sand-list__item {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
   .sand-list_four {
@@ -11195,7 +11195,7 @@ body {
     columns: 2;
   }
 
-  .default-block__content_services-grid .service-card {
+  .default-block__content_services-grid .service-card:not(:last-child) {
     margin-bottom: 32px;
   }
 
@@ -13727,7 +13727,7 @@ body {
     column-gap: 20px;
   }
 
-  .default-block__content_services-grid .service-card {
+  .default-block__content_services-grid .service-card:not(:last-child) {
     margin-bottom: 20px;
   }
 
@@ -14566,7 +14566,7 @@ body {
 
   .modal-window__container {
     padding: 96px;
-    max-width: 915px;
+    max-width: 925px;
   }
 
   .modal-window__container_max {
@@ -14855,7 +14855,7 @@ body {
   }
 
   .menu-card:hover {
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
     cursor: pointer;
     transition: 0.5s;
   }
@@ -14903,7 +14903,7 @@ body {
 
   .link-card:hover {
     transition: 0.5s;
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
   }
 
   .pagination__item-link:hover {
@@ -14915,7 +14915,7 @@ body {
   }
 
   .custom-tab:hover {
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
     cursor: pointer;
     transition: 0.5s;
   }
@@ -14937,7 +14937,7 @@ body {
   }
 
   .price-list__item:hover {
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
     transition: 0.5s;
   }
 
@@ -14965,7 +14965,7 @@ body {
   }
 
   .direction-link:hover {
-    background-color: #FCFAF7;
+    background-color: rgb(252, 250, 247);
     transition: 0.3s;
   }
 
