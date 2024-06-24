@@ -463,7 +463,7 @@ a[href^=mailto] {
 }
 
 .tertiary-button_download .tertiary-button__text {
-  white-space: wrap;
+  white-space: normal;
   word-break: break-word;
 }
 
